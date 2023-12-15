@@ -159,3 +159,49 @@ body {
     grid-area: mg;
     background-color: var(--dark-purple);
 }
+
+@media only screen and (max-width: 800px) {
+    .dts__tiles {
+        grid-template-areas:
+            "gd gd ux app"
+            "gd gd ill ill"
+            "ph ph mg mg";
+    }
+
+    .dts__heading {
+        font-size: 2.5rem;
+        width: 85%;
+        margin: auto;
+    }
+
+    .dts__content {
+        width: 85%;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .nav-footer__logo>img {
+        width: 48px;
+    }
+
+    .fc-button {
+        padding: 0.5rem 1.5rem;
+        border-radius: 2.5rem;
+        border: none;
+    }
+
+    .dts__tiles {
+        grid-template-areas:
+            "gd gd"
+            "gd gd"
+            "ux app"
+            "ill ill"
+            "ph ph"
+            "mg mg";
+    }
+
+    .dts__heading {
+        font-size: 2rem;
+    }
+}
