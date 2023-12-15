@@ -2,7 +2,7 @@
 
 :root {
     --galactic-blue: hsl(252, 66%, 62%);
-    --summer-yellow: hsl();
+    --summer-yellow: hsl(28, 89%, 67%);
     --pink: hsl(0, 78%, 79%);
     --light-red: hsl(7, 77%, 66%);
     --cyan: hsl(172, 46%, 57%);
@@ -36,4 +36,126 @@ ol,
 li {
     margin: 0;
     padding: 0;
+}
+
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+body {
+    background-color: var(--light-cream);
+}
+
+.wrapper-container {
+    max-width: 1110px;
+    width: 90%;
+    margin: auto;
+
+    @media only screen and (max-width: 600px) {
+        width: 95%;
+    }
+}
+
+.fc-button {
+    padding: 1rem 2.5rem;
+    border-radius: 2.5rem;
+    border: none;
+}
+
+.fc-button>a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-footer__list .fc-button {
+    background-color: var(--black);
+}
+
+.nav-footer__list .fc-button:hover {
+    background-color: var(--galactic-blue);
+}
+
+.booking-section .fc-button,
+.creator-info-section .fc-button {
+    background-color: var(--light-red);
+}
+
+.booking-section .fc-button:hover,
+.creator-info-section .fc-button:hover {
+    background-color: var(--summer-yellow);
+}
+
+.nav-footer__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dts__heading {
+    text-align: center;
+    font-size: 3.5rem;
+    line-height: 1.25em;
+}
+
+.dts__content {
+    text-align: center;
+    color: var(--medium-brown);
+    font-size: 1.125rem;
+    line-height: 1.5em;
+    margin: auto;
+    max-width: 700px;
+}
+
+.dts__tiles {
+    display: grid;
+    grid-template-areas:
+        "gd gd ux app ph ph"
+        "gd gd ill ill mg mg";
+    grid-auto-rows: 150px;
+    gap: 0.75rem;
+    color: white;
+    font-weight: 700;
+}
+
+.dts__tile {
+    display: grid;
+    align-content: space-between;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.dts__tile>img {
+    justify-self: right;
+}
+
+.dts__tile--gd {
+    grid-area: gd;
+    background-color: var(--galactic-blue);
+}
+
+.dts__tile--ux {
+    grid-area: ux;
+    background-color: var(--summer-yellow);
+}
+
+.dts__tile--app {
+    grid-area: app;
+    background-color: var(--pink);
+}
+
+.dts__tile--ph {
+    grid-area: ph;
+    background-color: var(--cyan);
+}
+
+.dts__tile--ill {
+    grid-area: ill;
+    background-color: var(--light-red);
+}
+
+.dts__tile--mg {
+    grid-area: mg;
+    background-color: var(--dark-purple);
 }
