@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Single-page design portfolio</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <script src="script/app.js" defer></script>
 </head>
 
 <body>
@@ -58,7 +59,7 @@
             </section>
 
             <section class="creator-info-section">
-                <img src="img/image-amy.webp" alt="" width="445px">
+                <img src="img/image-amy.webp" alt="">
                 <div class="creator-info">
                     <h2 class="ci__heading">I’m Amy, and I’d love to work on your next project</h2>
                     <p class="ci__content">I love working with others to create beautiful design solutions. I’ve
@@ -72,12 +73,16 @@
     </div>
     <section class="image-carousel">
         <h2 class="ic__heading">My Work</h2>
-        <div class="ic">
-            <!-- <img src="img/image-slide-1.jpg" alt="">
-                <img src="img/image-slide-2.jpg" alt="">
-                <img src="img/image-slide-3.jpg" alt="">
-                <img src="img/image-slide-4.jpg" alt="">
-                <img src="img/image-slide-5.jpg" alt=""> -->
+        <div class="ic__slider">
+            <img src="img/image-slide-1.jpg" alt="">
+            <img src="img/image-slide-2.jpg" alt="">
+            <img src="img/image-slide-3.jpg" alt="">
+            <img src="img/image-slide-4.jpg" alt="">
+            <img src="img/image-slide-5.jpg" alt="">
+        </div>
+        <div class="ic__nav-buttons">
+            <button class="ic__nb ic__nb--left"><img src="img/icon-arrow-left.svg"></button>
+            <button class="ic__nb ic__nb--right"><img src="img/icon-arrow-right.svg"></button>
         </div>
     </section>
 
