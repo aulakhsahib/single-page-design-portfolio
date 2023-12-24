@@ -237,7 +237,30 @@ body {
     padding: 0.5rem 0.75rem;
 }
 
+.booking-section {
+    background-color: var(--black);
+    color: white;
+    padding: 4rem;
+    display: grid;
+    row-gap: 1.5rem;
+    grid-template-areas:
+    "heading button"
+    "content button";
+}
 
+.bs__heading {
+    grid-area: heading;
+
+}
+.bs__content {
+    grid-area: content;
+    max-width: 540px;
+}
+.fc-button{
+    grid-area: button;
+    align-self: center;
+    justify-self: center;
+}
 
 
 
@@ -306,6 +329,14 @@ body {
     .creator-info-section>img {
         width: 300px;
         justify-self: center;
+    }
+
+    .booking-section {
+        grid-template-areas:
+        "heading"
+        "content"
+        "button";
+        text-align: center;
     }
 
 }
