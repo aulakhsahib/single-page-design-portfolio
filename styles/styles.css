@@ -100,6 +100,7 @@ body {
     text-align: center;
     font-size: 3.5rem;
     line-height: 1.25em;
+    margin-top: 2rem;
 }
 
 .dts__content {
@@ -107,7 +108,9 @@ body {
     color: var(--medium-brown);
     font-size: 1.125rem;
     line-height: 1.5em;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
     max-width: 700px;
 }
 
@@ -166,6 +169,8 @@ body {
 .creator-info-section {
     display: flex;
     gap: 4rem;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
 }
 
 .creator-info-section>img {
@@ -196,6 +201,9 @@ body {
     line-height: 1.5em;
 }
 
+.image-carousel {
+    margin-bottom: 4rem;
+}
 
 .ic__heading {
     text-align: center;
@@ -262,14 +270,10 @@ body {
     justify-self: center;
 }
 
-
-
-
-
-
-
-
-
+footer {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
 
 @media only screen and (max-width: 950px) {
     .creator-info-section {
@@ -297,12 +301,14 @@ body {
     .dts__heading {
         font-size: 2.5rem;
         width: 85%;
-        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .dts__content {
         width: 85%;
-        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .creator-info-section {
@@ -324,6 +330,7 @@ body {
 @media only screen and (max-width: 650px) {
     .creator-info-section {
         grid-template-columns: auto;
+        text-align: center;
     }
 
     .creator-info-section>img {
@@ -342,6 +349,10 @@ body {
 }
 
 @media only screen and (max-width: 550px) {
+    .creator-info-section {
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
     .nav-footer__logo>img {
         width: 48px;
     }
@@ -364,5 +375,9 @@ body {
 
     .dts__heading {
         font-size: 2rem;
+    }
+
+    .booking-section {
+        padding: 2.5rem;
     }
 }
