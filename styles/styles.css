@@ -203,6 +203,7 @@ body {
 
 .image-carousel {
     margin-bottom: 4rem;
+    overflow: hidden;
 }
 
 .ic__heading {
